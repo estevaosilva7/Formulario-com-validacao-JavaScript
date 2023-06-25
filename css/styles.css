@@ -1,45 +1,67 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-}
-
-body {
+    background: linear-gradient(to right, #dbb3ee, #f77ae4);
+  }
+  
+  body {
     padding: 1rem;
-}
-
-h1 {
+  }
+  
+  h1 {
     text-align: center;
-}
-
-form {
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 500px;
     margin: 0 auto;
-}
-
-label {
+  }
+  
+  label {
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-input,
-select,
-textarea {
+  }
+  
+  input,
+  select,
+  textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #111010;
     border-radius: 5px;
     font-size: 1.1rem;
-}
-
-button {
-    padding: 10px;
+  }
+  
+  button {
+    padding: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+    background-color: #0c0a0a;
+    color: #180303;
     font-size: 1.1rem;
     cursor: pointer;
-}
+    box-shadow: 5px 5px 5px #4b4249;
+    border-radius: 20px;
+  }
+  
+  /* Media Query */
+  @media screen and (max-width: 767px) {
+    body {
+      padding: 0.5rem;
+    }
+  
+    form {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    input,
+    select,
+    textarea {
+      font-size: 1rem;
+    }
+  }
+  
